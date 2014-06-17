@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>
+		Apurv Mittal's Photography
+	</title>
+	
+	<style>
+		* {font-family: sans-serif; } 
+		a, h1, h2, h3, h4, h5, div {text-align:center; color:#FF0000;}
+		body {background:#453F3F;}
+	</style>
+	
+	
+	<!-- <script type="text/javascript" src="third.party/jquery-1.9.0.min.js"></script> --> 
+	<script type="text/javascript" src="third.party/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="third.party/jquery-jsonp/jquery.jsonp.js"></script>
+	<script type="text/javascript" src="third.party/transit/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="third.party/hammer.js/hammer.min.js"></script>
+	<script type="text/javascript" src="third.party/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Fancybox - Optionnal -->
+    <link href="third.party/fancybox/jquery.fancybox.css?v=2.1.4" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="third.party/fancybox/jquery.fancybox.pack.js?v=2.1.4"></script> 
+	<link href="third.party/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="third.party/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script> 
+	<script type="text/javascript" src="third.party/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+	<!-- Fancybox -->
+
+	<!-- nanoGALLERY - default css file -->
+	<link href="css/nanogallery.css" rel="stylesheet" type="text/css">
+	<!-- nanoGALLERY - css file for the theme 'clean' -->
+	<link href="css/themes/clean/nanogallery_clean.css" rel="stylesheet" type="text/css">
+	<link href="css/themes/light/nanogallery_light.css" rel="stylesheet" type="text/css">
+	
+	<!-- nanoGALLERY js -->
+	<script type="text/javascript" src="jquery.nanogallery.js"></script> 
+	
+	
+	<script>
+		$(document).ready(function () {
+			// Sample1
+			myColorScheme = {
+				breadcrumb : {
+					background : '#00F',
+					border : '1px dotted #555',
+					color : '#ccc',
+					colorHover:'#fff'
+				},
+				thumbnail : {
+					background:'#000',
+					border:'1px solid #000',
+					labelBackground:'transparent',
+					labelOpacity:'0.8',
+					titleColor:'#fff',
+					descriptionColor:'#eee'
+				}
+			};
+			myColorSchemeViewer = {
+				background:'rgba(1, 1, 1, 0.75)',
+				imageBorder:'12px solid #f8f8f8',
+				imageBoxShadow:'#888 0px 0px 20px',
+				barBackground:'#222',
+				barBorder:'2px solid #111',
+				barColor:'#eee',
+				barDescriptionColor:'#aaa'
+			};
+
+	jQuery("#nanoGallery3").nanoGallery({
+		thumbnailWidth:150,
+		thumbnailHeight:150,
+		userID:'bits.apurv@gmail.com',
+		kind:'picasa',
+		blackList:'Scrapbook|forhomepage|profil',
+		maxItemsPerLine:5,
+				//album: '5852572882905112961',
+        //album:'5856259539659194001',
+        albumList: 'Nature|Portrait|Landscape|Architecture|Action|People|Night_Shots|Urban|General|Automotive',
+        colorScheme:'none',
+        locationHash:false,
+        viewerDisplayLogo:false,
+				thumbnailHoverEffect:[{'name':'labelAppear75','duration':300},{'name':'borderDarker'}],
+        theme:'light',
+        i18n:{'thumbnailImageDescription':'View Photo', 'thumbnailAlbumDescription':'Open Album'},
+				thumbnailLabel:{display:true,position:'overImageOnMiddle'},
+        paginationMaxLinesPerPage:3
+			});			
+		});
+	</script>
+	
+	
+<!-- Navigation Menu Scripts   -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<!-- 	<link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+	<script src="js/modernizr.custom.25376.js"></script>
+
+<!-- END OF Navigation Menu Scripts   -->	
+			
+	
+</head>
+<body>
+
+	<div id="perspective" class="perspective effect-rotatetop">
+		<div class="container">
+			<div class="wrapper"><!-- wrapper needed for scroll -->
+
+<!-- Show Menu Navigation Button -->
+				<div class="main clearfix">
+					<div class="column">
+							<p><button id="showMenu">Show Menu</button></p>
+					</div>
+				</div>
+<!-- END OF Show Menu Navigation Button -->
+
+<!--  <div style="margin:auto;max-width:960px;">  -->
+				<div id="nanoGallery3" align="center">
+					<img src="logo_apurv.jpg"/>
+				</div>
+				
+<!--  </div> -->
+
+			</div><!-- wrapper -->
+		</div><!-- /container -->
+			<nav class="outer-nav bottom horizontal">
+				<a href="http://apurvmittal.com" class="icon-home">Home</a>
+				<a href="http://poetry.apurvmittal.com" class="icon-news">Poetry</a>
+				<a href="http://gallery.apurvmittal.com" class="icon-image">Photography</a>
+				<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>
+			</nav>
+	</div><!-- /perspective -->
+	<script src="js/classie.js"></script>
+	<script src="js/menu.js"></script>
+
+
+
+
+</body>
+</html>
