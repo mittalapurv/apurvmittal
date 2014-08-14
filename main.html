@@ -7,6 +7,14 @@
 				text-align: center;
 				color: #FF0000;
 			}
+			#right
+			{
+				width: 10%;
+				align: center;
+				float: right;
+				margin: 0 auto;
+				color: #F00;
+			}
 			#left{
 				width: 75%;
 				align: center;
@@ -14,48 +22,55 @@
 				margin: 0 auto;
 			}
 			#roboticist{
+                background-image: url(resources/roboticist.png);
 				width: 100%;
+                clear: both;
 			}
 			#backgrnd{
 				width: 100%;
-				height: 400px;
+				height: 100%;
 				background-image: url("resources/bgimage1.png");
+				background-color:rgb(0,0,0);
   				background-repeat: no-repeat;
-    			background-position: right bottom;
+    			background-position: bottom right;
 			}
 			#name{
-				background-image: url(resources/apurv_mittal_fire.png);
-				background-repeat: no-repeat;
-				background-position: center center;
-				width: 100%;
-				height: 150px;
-			}
-			#systems{
-				background-image: url(resources/systems.png);
-				width: 50%;
-				float: left;
-			}
-			#software{
-				background-image: url(resources/software.png);
-				width: 50%;
-				float: right;
-			}
-			#photographer{
-				background-image: url(resources/photographer.png);
-				width: 50%;
-				float: left;
-			}
-			#poet{
-				background-image: url(resources/poet.png);
-				width: 50%;
-				float: right;
-			}
-			#systems, #software, #photographer, #poet{
+				background-image: url(resources/apurv_mittal_logo.png);
 				background-repeat: no-repeat;
 				background-position: center center;
 				display:block;
    				text-indent:-9999px;
-   				height: 100px;
+				width: 100%;
+				height: 150px;
+				clear: both;
+			}
+			#systems{
+				background-image: url(resources/systems.png);
+				width: 45%;
+				float: left;
+			}
+			#software{
+				background-image: url(resources/software.png);
+				width: 45%;
+				float: right;
+			}
+			#photographer{
+				background-image: url(resources/photographer.png);
+				width: 45%;
+				float: left;
+			}
+			#poet{
+				background-image: url(resources/poet.png);
+				width: 45%;
+				float: right;
+			}
+      		#systems, #software, #photographer, #poet, #roboticist{
+				background-repeat: no-repeat;
+				background-position: center center;
+				display:block;
+   				text-indent:-9999px;
+   				height: 110px;
+                margin: 5px;
 			}
 			body {background-color: #000000;}
 		</style>
@@ -64,9 +79,7 @@
 	</head>
 	<body>
 		<div id="backgrnd">
-			<div id="name">
-			<!-- <img src="resources/apurv_mittal_fire.png"> -->
-			</div>
+			<a href="https://sites.google.com/site/israpurv/system-engineering" id="name">Systems Engineer</a>
 			<div id="left">
 				<!-- 
 						<div id="systems"> Systems Engineer </div>
@@ -74,14 +87,25 @@
 						<div id="photographer"></div>
 						<div id="poet">Poet</div>
 
-				-->
+				
+                <div id="name">
+                    <!-- <img src="resources/apurv_mittal_fire.png"> 
+                </div>
+                
+                -->
 				<a href="https://sites.google.com/site/israpurv/system-engineering" id="systems">Systems Engineer</a>
 				<a href="https://sites.google.com/site/israpurv/system-engineering" id="software">Software Developer</a>
 				<a href="https://sites.google.com/site/israpurv/system-engineering" id="photographer">Photographer</a>
-				<a href="https://sites.google.com/site/israpurv/system-engineering" id="poet">Poet</a>
-			</div>
-			<div id="roboticist">Roboticist</div>
-			<div id="menu"> Main Menu</div>
+				<a href="poetry/poetry.html" id="poet">Poet</a>
+                <a href="https://sites.google.com/site/israpurv/system-engineering" id="roboticist">Roboticist</a>
+            </div>
+          
+          <!--  
+            <div id="right">
+            Main Menu 
+            </div>
+		-->
+			<!-- <div id="menu"> Main Menu</div> -->
 			<!-- <div id="roboPic"> <img src="resources/bgimage1.png"></div> -->
 		</div>
 	</body>
